@@ -1,0 +1,45 @@
+# Dependencies and package-manager caches
+node_modules/
+.npm/
+.pnpm-store/
+
+# Build and installer outputs at the repository root
+release/
+/dist/
+/out/
+/build/
+*.exe
+*.msi
+*.zip
+*.7z
+*.asar
+
+# Local backups and temporary inspection folders
+recordly-slim-backup-*/
+*.download
+*.tmp
+*.temp
+
+# User recordings and media exports
+recordings/
+*.mp4
+*.webm
+*.mov
+*.mkv
+*.avi
+*.wav
+*.m4a
+*.mp3
+
+# Local app/user settings
+app-settings.json
+recordings-settings.json
+countdown-settings.json
+recent-projects.json
+shortcuts.json
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
