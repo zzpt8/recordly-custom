@@ -6,8 +6,8 @@
 
 ## 下载安装
 
-- Release 页面：https://github.com/zzpt8/recordly-custom/releases/tag/v1.0.0-custom
-- Windows 安装包直链：https://github.com/zzpt8/recordly-custom/releases/download/v1.0.0-custom/Recordly-Custom-1.0.0-Windows-x64.exe
+- Release 页面：https://github.com/zzpt8/recordly-custom/releases/tag/v1.0.1-custom
+- Windows 安装包直链：https://github.com/zzpt8/recordly-custom/releases/download/v1.0.1-custom/Recordly-Custom-1.0.1-Windows-x64.exe
 
 ## 这个版本能做什么
 
