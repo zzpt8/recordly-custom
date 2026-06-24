@@ -19,6 +19,13 @@ recordly-slim-backup-*/
 *.download
 *.tmp
 *.temp
+app-custom.asar.unpacked/
+disabled-phone-camera-files/
+prototypes/
+asar-inspect/dist/assets/index-webcam-layout-*.js
+asar-inspect/dist/assets/modernVideoExporter-webcam-layout-*.js
+/main.cjs
+/index.html
 
 # User recordings and media exports
 recordings/
