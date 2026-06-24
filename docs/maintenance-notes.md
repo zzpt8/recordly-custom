@@ -7,7 +7,7 @@
 - 当前实际安装目录：`C:\Users\10549\AppData\Local\Programs\recordly\resources\`
 - 当前工作区目录：`D:\Users\10549\Documents\录屏工具RE改造`
 - 当前 GitHub 仓库：`https://github.com/zzpt8/recordly-custom`
-- 当前公开 Release：`v1.0.0-custom`
+- 当前公开 Release：`v1.0.1-custom`
 
 ## 长期维护规则
 
