@@ -38,6 +38,9 @@
 - `asar-inspect/dist/assets/`：前端渲染层打包资源。
 - `scripts/`：补丁脚本、验证脚本和实验脚本。
 - `docs/`：功能说明和改造记录。
+- `docs/maintenance-notes.md`：长期维护记录、当前维护基线和改造记录模板。
+- `docs/release-process.md`：工作区、安装版、GitHub Release 三者之间的发布流程。
+- `docs/maintenance-checklist.md`：以后每次继续改造时可直接照着执行的固定清单。
 
 ## 已知说明
 
