@@ -1,6 +1,6 @@
 # Recordly Custom
 
-基于 Recordly 改造的 Windows 录屏工具，当前公开版本已经对齐本机实际可用安装版，适合直接下载安装使用。
+基于 Recordly 改造的 Windows 录屏工具，可直接下载安装使用。
 
 ## 下载安装
 
