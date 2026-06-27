@@ -48,7 +48,6 @@ assertIncludes(mainPath, "{ timeout: 45000, windowsHide: true }", "longer HTTPS 
 assertIncludes(mainPath, "手机摄像头需要 HTTPS", "Windows phone camera refuses insecure HTTP fallback");
 assertIncludes(mainPath, "recordlyPhoneCameraGetUserMediaFallback", "mobile camera getUserMedia fallback");
 assertIncludes(mainPath, "当前页面不是 HTTPS 安全连接", "mobile camera insecure context hint");
-assertNotIncludes(mainPath, "transform:scaleX(-1)", "mirrored phone camera preview");
 assertIncludes(mainPath, "recordlyPhoneCameraShowConnectInfo", "system connect prompt");
 assertIncludes(mainPath, "m.clipboard.writeText(info.url)", "connect URL clipboard copy");
 assertIncludes(mainPath, 'require("qrcode")', "local QR code dependency");
@@ -121,7 +120,9 @@ assertIncludes(rendererPath, "Added 1 automatic zoom suggestion", "suggest zoom 
 assertIncludes(modernExporterPath, "recordlyModernRecordedWebcamRect(e,t,i,a=1)", "export recorded webcam rect reacts to zoom");
 assertIncludes(mainPath, "options.showConnectInfo !== false", "main respects silent phone camera start");
 assertNotIncludes(mainPath, "手机连接地址已复制", "blocking phone camera fallback dialog");
-assertIncludes(rendererPath, 'sourceKind:r?"phone-camera":void 0', "phone camera source kind reaches editor");
+assertIncludes(rendererPath, 'sourceKind:r?"phone-camera":void 0,mirror:r?!1:c.mirror??e.mirror', "phone camera HUD preview disables mirror");
+assertIncludes(rendererPath, 'mirror:"phone-camera"===P.sourceKind?!1:"boolean"==typeof P.mirror?P.mirror:YCa.mirror', "phone camera saved overlay disables mirror");
+assertIncludes(rendererPath, 'style:{transform:f===recordlyPhoneCameraDeviceId?void 0:"scaleX(-1)"}', "recording HUD preview keeps desktop mirror but not phone camera");
 assertIncludes(rendererPath, 'cropRegion:r?o:c.cropRegion??e.cropRegion', "phone camera editor no crop override");
 assertIncludes(mainPath, 'webcamSourceKind:t.webcamSourceKind==="phone-camera"', "main session keeps phone camera source kind");
 
